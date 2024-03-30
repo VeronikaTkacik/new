@@ -99,14 +99,63 @@ def connects():
     btn_add.clicked.connect(add_form)
     btn_delete.clicked.connect(del_form)
     btn_start.clicked.connect(start_test)
-    btn_OK.clicked.connect(click_OK)
+    btn_OK.clicked.connect(click_OK)  
     btn_Menu.clicked.connect(back_to_menu)
     timer.timeout.connect(show_card)
     btn_Sleep.clicked.connect(sleep_card)
 
-app.setStyleSheet('''QWidget{
-                 font-size: 20 px;
-}''')
+app.setStyleSheet('''
+    QWidget{
+        font-size: 20 px;
+        background-color: black ;
+        color : #ffffff;
+
+}
+                  QRadioButton{
+                  font-size: 25px;
+                  }
+
+QPushButton {
+        background-color: purple;
+        color : #aaaaff;
+        border-radius: 7px ;
+        border-color: #3232ff;
+        border-style: hidden;
+        border-width: 5px;
+        min-height: 20px;
+        font-size: 25px;
+        font-family: none;
+
+    }
+    QPushButton:hover{
+        background-color: red;
+    }
+
+    QLabel {
+        background-color: #000000 ;
+        color : #ffffff;
+        font-size: 25px;
+    }
+    
+    QTextEdit {  
+        background-color: #1111111 ;
+        color : #ffffff;
+        font-size: 25px;
+    }
+    
+    QListWidget {
+        background-color: #111111 ;
+        color : #ffffff;
+        font-size: 25px;
+    }
+    
+    QLineEdit {
+        background-color: #000000 ;
+        color : #ffffff;
+        font-size: 25px;
+                  
+                  
+                  ''')
 
 testlist()
 set_card()
