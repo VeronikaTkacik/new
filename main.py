@@ -107,7 +107,7 @@ def connects():
 app.setStyleSheet('''
     QWidget{
         font-size: 20 px;
-        background-color: black ;
+        background-color: black;
         color : #ffffff;
 
 }
@@ -116,9 +116,9 @@ app.setStyleSheet('''
                   }
 
 QPushButton {
-        background-color: purple;
+        background-color: blue;
         color : #aaaaff;
-        border-radius: 7px ;
+        border-radius: 10px ;
         border-color: #3232ff;
         border-style: hidden;
         border-width: 5px;
@@ -128,23 +128,23 @@ QPushButton {
 
     }
     QPushButton:hover{
-        background-color: red;
+        background-color: gray;
     }
 
     QLabel {
-        background-color: #000000 ;
+        background-color: red ;
         color : #ffffff;
         font-size: 25px;
     }
     
     QTextEdit {  
-        background-color: #1111111 ;
+        background-color: #111111 ;
         color : #ffffff;
         font-size: 25px;
     }
     
     QListWidget {
-        background-color: #111111 ;
+        background-color: red ;
         color : #ffffff;
         font-size: 25px;
     }
